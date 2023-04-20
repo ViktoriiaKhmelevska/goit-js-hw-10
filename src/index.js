@@ -45,11 +45,11 @@ function onInput(e) {
 function renderCountriesInfo(arr) {
     return arr.map(
         ({ name: { official }, flags: { svg }, capital, languages, population }) =>    
-        `   <div class="name-flag"><img src="${svg}" alt="${official}" width=20px height=20px></div>
-            <h2>${official} ${official}</h2></div>
-            <h2>${capital}</h2>
-            <h2>${languages}</h2>
-            <h2>${population}</h2>
+        `  <div < class="name-flag"><img src="${svg}" alt="${official}" width=20px height=20px>
+            <h2>${official}</h2></div>
+            <h2>Capital: ${capital}</h2>
+            <h2>Population: ${population}</h2>
+            <h2>Languages: ${Object.values(languages)}</h2>
       `).join("");
  };
 

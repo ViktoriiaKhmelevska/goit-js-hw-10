@@ -19,8 +19,15 @@ body {
   margin-bottom: 16px;
 }
 
-.name-flag{
+.name-flag {
 display: flex;
 align-items: center;
 gap: 15px;
+}
+
+li{
+  list-style: none;
+}
+.country-info {
+margin-left: 20px;
 }
